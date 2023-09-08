@@ -110,7 +110,7 @@ function App() {
       <Header onClickCart={() => setCartOpened(true)}/>
        
       <Routes>
-        <Route path='/'>
+        <Route path=''>
 
           <Route index element={
             <Home 
@@ -125,8 +125,8 @@ function App() {
             />} 
           />
 
-          <Route path="/favorite" element={ <Favorite /> } />
-          <Route path="/orders" element={ <Orders /> } />
+          <Route path="favorite" element={ <Favorite /> } />
+          <Route path="orders" element={ <Orders /> } />
 
           <Route path="*" element={ <center>NOT FOUND PAGE</center> } />
 

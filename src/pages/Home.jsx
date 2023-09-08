@@ -36,9 +36,9 @@ const Home = ({
             <div className="contentHeaderWrapper">
                 <h1 className="contentHeader">{searchInput ? `Поиск по запросу: ${searchInput}` : 'Все кроссовки'}</h1>
                 <div className="searchBar">
-                    <img width={14} height={14} src="/img/search.svg" alt="search" className="search"/>
+                    <img width={14} height={14} src="img/search.svg" alt="search" className="search"/>
                     <input onChange={handleSearchInput} value={searchInput} placeholder="Поиск..."></input>
-                    {searchInput && <img src="/img/btnRemove.svg" alt="" className="btnSearchRemove" onClick={handlerClearSearchBar}/>}
+                    {searchInput && <img src="img/btnRemove.svg" alt="" className="btnSearchRemove" onClick={handlerClearSearchBar}/>}
                 </div>
             </div>
 

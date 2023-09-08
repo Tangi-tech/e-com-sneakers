@@ -29,7 +29,7 @@ const Favorite = (  ) => {
                 <Info 
                 title={ "Закладок нет :(" }
                 description={ "Вы ничего не добавили в закладки" }
-                image={ "/img/cry.jpg" }
+                image={ "img/cry.jpg" }
                 smallSize={true}
                 redirectToHome={true}
               />

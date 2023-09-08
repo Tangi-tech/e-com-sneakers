@@ -41,7 +41,7 @@ const Card = ({ item, setDrawerItems, onClickFavorite, setInitialFavorites = fal
           </ContentLoader> : 
           <>
             <div className={style.cartHeart} onClick={handleSetFavorite}>
-            <img src={favorite ? "/img/favoriteOn.svg" : "/img/heartOff.svg"} alt="heart" />
+            <img src={favorite ? "img/favoriteOn.svg" : "img/heartOff.svg"} alt="heart" />
             </div>
             <img width='100%' height={135} src={item.imgURL} alt="card" className={style.cardImg}/>
             <p>{item.name}</p>
@@ -50,7 +50,7 @@ const Card = ({ item, setDrawerItems, onClickFavorite, setInitialFavorites = fal
                 <span>ЦЕНА:</span>
                 <b>{item.price} руб.</b>
               </div>
-                <img src={ btnChecked ? '/img/plusChecked.svg' : '/img/plus.svg'} alt="" className={style.btnPlus} onClick={handleBtnChecked}/>
+                <img src={ btnChecked ? 'img/plusChecked.svg' : 'img/plus.svg'} alt="" className={style.btnPlus} onClick={handleBtnChecked}/>
             </div>
           </>
           }

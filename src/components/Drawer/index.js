@@ -29,7 +29,7 @@ const Drawer = ({onClickClose, onClickRemove, cartOpened }) => {
         <div className={`${Styles.drawerOuter} ${cartOpened ? Styles.drawerOuterVisible : ''} `}>
         <div className={Styles.drawerInner}>
           <h2>Корзина
-          <img src="/img/btnRemove.svg" alt="" className="btnRemove" onClick={() => onClickClose(false)}/>
+          <img src="img/btnRemove.svg" alt="" className="btnRemove" onClick={() => onClickClose(false)}/>
           </h2>
           
             {drawerItems.length > 0 ? 
@@ -43,7 +43,7 @@ const Drawer = ({onClickClose, onClickRemove, cartOpened }) => {
                         <p>{item.name}</p>
                         <b>{item.price} руб.</b>
                       </div>
-                      <img src="/img/btnRemove.svg" alt="remove" className={Styles.btnRemove} onClick={() => onClickRemove(item)}/>
+                      <img src="img/btnRemove.svg" alt="remove" className={Styles.btnRemove} onClick={() => onClickRemove(item)}/>
                     </div>
                     ))}
                 </div>
@@ -62,7 +62,7 @@ const Drawer = ({onClickClose, onClickRemove, cartOpened }) => {
                     </ul>
                     <button disabled={buttonDesabled} className={Styles.cartButton} onClick={handlerMakeOrder}>
                       <span className={Styles.cartText}>Оформить заказ</span>
-                      <img src="/img/arrow.svg" alt=""/>
+                      <img src="img/arrow.svg" alt=""/>
                     </button>
                   </div>
               </div>
@@ -73,7 +73,7 @@ const Drawer = ({onClickClose, onClickRemove, cartOpened }) => {
               <Info 
                 title={ isOrderCompleted ? "Заказ оформлен" : "Корзина пустая" }
                 description={ isOrderCompleted ? "Ваш заказ №18 будет передан курьерской службе" : "Добавьте хотя бы одну пару кроссовок, что бы сделать заказ." }
-                image={ isOrderCompleted ? "/img/list.jpg" : "/img/box.jpg" }
+                image={ isOrderCompleted ? "img/list.jpg" : "img/box.jpg" }
               />
               
             }

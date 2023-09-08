@@ -28,7 +28,7 @@ const Orders = (  ) => {
                 <Info 
                 title={ "У вас нет заказов" }
                 description={ "Добавьте хотя бы одну пару кроссовок, что бы сделать заказ." }
-                image={ "/img/sad.jpg" }
+                image={ "img/sad.jpg" }
                 smallSize={true}
                 redirectToHome={true}
               />

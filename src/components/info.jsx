@@ -16,13 +16,13 @@ export const Info = ({title, description, image, smallSize = false, redirectToHo
                 <Link to='/'>
                     <button onClick={() => setCartOpened(false)}>
                         <p>Вернуться назад</p>
-                        <img src="/img/arrow-left.svg" alt=""/>
+                        <img src="img/arrow-left.svg" alt=""/>
                     </button>
                 </Link> :
 
                 <button onClick={() => setCartOpened(false)}>
                 <p>Вернуться назад</p>
-                <img src="/img/arrow-left.svg" alt=""/>
+                <img src="img/arrow-left.svg" alt=""/>
             </button>
             }
             

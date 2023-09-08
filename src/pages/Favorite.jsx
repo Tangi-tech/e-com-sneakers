@@ -1,7 +1,9 @@
-import Card from '../components/Card/index'
 import { useContext } from 'react'
-import AppContext from '../context'
+
+import Card from '../components/Card/index'
 import Info from '../components/info'
+
+import AppContext from '../context'
 
 
 const Favorite = (  ) => {

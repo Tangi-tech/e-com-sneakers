@@ -1,8 +1,10 @@
 import { useState, useContext } from 'react'
 import axios from 'axios'
+
 import Info from '../info'
-import { useCartPrice } from '../../hooks/useCartPrice'
 import AppContext from '../../context'
+import { useCartPrice } from '../../hooks/useCartPrice'
+
 import Styles from './Drawer.module.scss'
 
 const Drawer = ({onClickClose, onClickRemove, cartOpened }) => {

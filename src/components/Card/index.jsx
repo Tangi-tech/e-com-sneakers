@@ -1,6 +1,7 @@
-import style from './Card.module.scss'
 import ContentLoader from "react-content-loader"
 import { useEffect, useState } from 'react'
+
+import style from './Card.module.scss'
 // import AppContext from '../../context'
 
 const Card = ({ item, setDrawerItems, onClickFavorite, setInitialFavorites = false, isAdded = false, loading = false }) => {

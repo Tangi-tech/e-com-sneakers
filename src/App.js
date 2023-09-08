@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import AppContext from './context'
 import axios from 'axios'
+
 import Header from './components/Header'
 import Drawer from './components/Drawer'
 import Home from './pages/Home'
 import Favorite from './pages/Favorite'
 import Orders from './pages/Orders'
 
+import AppContext from './context'
 
 function App() {
   const [cartOpened, setCartOpened] = useState(false);

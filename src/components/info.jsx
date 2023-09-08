@@ -1,6 +1,7 @@
 import { useContext } from 'react'
-import AppContext from '../context'
 import { Link } from 'react-router-dom'
+
+import AppContext from '../context'
 
 export const Info = ({title, description, image, smallSize = false, redirectToHome = false}) => {
     const { setCartOpened } = useContext(AppContext)

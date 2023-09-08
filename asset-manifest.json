@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/e-com-sneakers/static/css/main.6651828d.css",
-    "main.js": "/e-com-sneakers/static/js/main.6d97daa2.js",
+    "main.js": "/e-com-sneakers/static/js/main.6df8e38d.js",
     "index.html": "/e-com-sneakers/index.html",
     "main.6651828d.css.map": "/e-com-sneakers/static/css/main.6651828d.css.map",
-    "main.6d97daa2.js.map": "/e-com-sneakers/static/js/main.6d97daa2.js.map"
+    "main.6df8e38d.js.map": "/e-com-sneakers/static/js/main.6df8e38d.js.map"
   },
   "entrypoints": [
     "static/css/main.6651828d.css",
-    "static/js/main.6d97daa2.js"
+    "static/js/main.6df8e38d.js"
   ]
 }

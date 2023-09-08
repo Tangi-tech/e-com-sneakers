@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E7F6FF;
+}
+
+* {
+  font-family: 'Montserrat', system-ui;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #e7e7e7;
+  
+  .headerLeft {
+    display: flex;
+    align-items: center;
+
+    h3, 
+    p {
+      margin: 0;
+    }
+
+    img {
+      margin-right: 16px;
+    }
+  }
+}
+
+.headerInfo {
+  p {
+    opacity: 0.5;
+  }
+}
+
+.headerRight{
+  display: flex;
+
+  li {
+    margin-right: 16px;
+  }
+  img {
+    margin-right: 10px;
+  }
+
+  .cartIcon {
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #9DD458;
+    }
+  }
+}
+
+.content {
+  padding: 40px;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+
+.cards {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contentHeaderWrapper {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 0 30px 0;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 45px;
+  border: 1px solid #eeecec;
+  border-radius: 10px;
+  padding: 0 18px;
+
+    input {
+      border: none;
+      font-size: 16px;
+      padding: 14px;
+      width: 100%;
+      height: 100%;
+    }
+    .btnSearchRemove {
+      width: 20px;
+      height: 20px;
+    }
+}
+
+
+.cartEmpty {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .imgBox {
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+  }
+  .cartEmptyText {
+    margin: 0;
+    width: 300px;
+    text-align: center;
+    opacity: .8;
+    margin-bottom: 40px;
+  }
+
+  button {
+    display: flex;
+    width: 245px;
+    height: 55px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: #FFF;
+    background-color: #9DD458;
+    border: none;
+    border-radius: 18px;
+    transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+    cursor: pointer;
+
+    p {
+      font-size: 16px;
+      flex: 1;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+
+    &:hover {
+      background-color: lighten(#9DD458, 5%);
+      transform: translateX(-4px);
+    }
+    &:active {
+      background-color: darken(#9DD458, 5%);
+    }
+  }
+
+}

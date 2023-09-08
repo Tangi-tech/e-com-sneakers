@@ -49,7 +49,7 @@ function App() {
     } else {
       setFavoriteItems(prev => [...prev, item])
     }
-  }
+  } 
 
   const handleRemoveCartItem = (item) => {
     setDrawerItems(prev => prev.filter(i => i.id !== item.id))
